@@ -10,7 +10,7 @@ st.set_page_config(
 
 with st.sidebar:
     st.title("⚙️ Settings")
-    api_url = st.text_input("FastAPI URL", value="http://127.0.0.1:8002")
+    api_url = st.text_input("FastAPI URL", value="https://agentops-engine.onrender.com")
     if st.button("🔍 Health Check"):
         try:
             r = requests.get(f"{api_url}/health", timeout=5)
